@@ -1,0 +1,25 @@
+### Cadastrar Imc
+POST http://localhost:5075/api/imc/cadastrar
+Content-Type: application/json
+
+{
+    "Altura": 1,
+    "Peso": 60,
+    "UsuarioId": 1,
+    //Não consegui realizar o cálculo automaticamente
+    "ImcCalculado": 26
+}
+
+### Listar Imcs
+GET http://localhost:5075/api/imc/listar
+
+### Editar Imc
+PUT http://localhost:5075/api/imc/alterar/1
+Content-Type: application/json
+
+{
+    "Altura": 2,
+    "Peso": 120,
+    "UsuarioId": 5,
+    "ImcCalculado": 26
+}

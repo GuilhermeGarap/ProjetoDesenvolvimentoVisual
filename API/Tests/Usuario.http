@@ -1,0 +1,11 @@
+### Cadastrar Usuário
+POST http://localhost:5075/api/usuario/cadastrar
+Content-Type: application/json
+
+{
+    "Nome": "João",
+    "Data": "30/01/2003"
+}
+
+### Listar Usuários
+GET http://localhost:5075/api/usuario/listar

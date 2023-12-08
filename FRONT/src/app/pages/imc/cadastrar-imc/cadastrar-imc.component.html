@@ -1,0 +1,17 @@
+<h2>Cadastrar IMC</h2>
+
+<div><label>Usuário</label>
+    <select [(ngModel)]="usuarioId">
+        <option *ngFor="let u of usuarios" [value]="u.usuarioId">
+            {{ u.nome }}
+        </option>
+    </select>
+</div>
+<div><label>Altura: </label>
+    <input [(ngModel)]="altura"/>
+</div>
+<div><label>Peso: </label>
+    <input [(ngModel)]="peso"/>
+</div>
+
+<div><button (click)="cadastrar()">Cadastrar</button></div>
